@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="IntResourceVariable" load_steps=3 format=3 uid="uid://d3oerh6ryycnk"]
+
+[ext_resource type="Resource" uid="uid://h8mnapxeuvil" path="res://addons/rak/core/logger/logger.tres" id="1_ecmwb"]
+[ext_resource type="Script" uid="uid://xlcl6ha2n5lj" path="res://addons/rak/core/resource_variables/int_resource_variable.gd" id="2_2xxj1"]
+
+[resource]
+script = ExtResource("2_2xxj1")
+initial_value = 3
+logger = ExtResource("1_ecmwb")
+description = ""
+skip_reset = null
+metadata/_custom_type_script = "uid://xlcl6ha2n5lj"

@@ -2,6 +2,7 @@
 class_name BaseResourceVariable extends Resource
 @export var logger : RAKLogger = load("res://addons/rak/core/logger/logger.tres")
 @export_multiline  var description : String
+@export var skip_reset: bool = false
 
 var name : String
 
@@ -12,6 +13,9 @@ func reset():
 	if name.is_empty():
 		name = resource_path.get_file().trim_suffix('.tres')
 		ResourceSaver.save(self, resource_path)
+	
+	if skip_reset:
+		return
 
 func log_message(message : String):
 	if not _has_logger():
