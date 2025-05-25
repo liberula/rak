@@ -1,0 +1,7 @@
+[gd_resource type="Resource" script_class="RAKLogger" load_steps=2 format=3 uid="uid://h8mnapxeuvil"]
+
+[ext_resource type="Script" uid="uid://bh3rkv3khdymn" path="res://addons/rak/core/logger/rak_logger.gd" id="1_y8311"]
+
+[resource]
+script = ExtResource("1_y8311")
+metadata/_custom_type_script = "uid://bh3rkv3khdymn"
